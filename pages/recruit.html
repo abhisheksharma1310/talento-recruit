@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talento Recruit - Signup</title>
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/recruit.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <header>TalentoRecruit</header>
+      <ul>
+        <li><a href="../index.html" role="button">Home</a></li>
+        <li><a href="./recruit.html" role="button">Recruit</a></li>
+        <li><a href="./login.html" role="button">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- Welcome Header -->
+    <section class="welcome-header">
+      <header>Find Your Ideal Candidates</header>
+      <p>
+        Use our powerful candidate search functionality to discover talented
+        individuals who perfectly match your hiring requirements.
+      </p>
+    </section>
+
+    <!-- Search Option -->
+    <section class="search-button">
+      <button id="search-candidate">Search Candidates</button>
+      <button id="saved-candidate">Saved Candidates</button>
+    </section>
+
+    <!-- Search Form -->
+    <section class="search-form">
+      <form id="search-form">
+        <div>
+          <input
+            type="text"
+            name="search-location"
+            id="search-location"
+            class="form-control"
+            placeholder="Location"
+            required
+          />
+        </div>
+
+        <div>
+          <select
+          id="dropdown"
+          name="job-roles"
+          class="form-control"
+          required
+          title="job-roles"
+        >
+          <option disabled selected value>Job Roles</option>
+          <option value="frontend">Frontend</option>
+          <option value="backend">Backend</option>
+          <option value="fullstack">Fullstack</option>
+          <option value="other">Other</option>
+        </select>
+        </div>
+        
+        <div>
+          <button id="filter-candidate" type="button">Seacrh</button>
+        </div>
+        
+      </form>
+    </section>
+
+    <!-- Candidates list  -->
+    <div id="list-generate"></div>
+    
+    <!-- Footer -->
+    <section class="footer">
+      <div class="social-icons">
+        <img src="../asset/image/facebook.svg" alt="facebook" />
+        <img src="../asset/image/twitter.svg" alt="twitter" />
+        <img src="../asset/image/instagram.svg" alt="instagram" />
+        <img src="../asset/image/linkedIn.svg" alt="linkedIn" />
+      </div>
+      <div class="copyright-info">
+        Copyright © 2023 TalentoRecruit. All rights reserved.
+      </div>
+      <div class="address">
+        +1-XXX-XXX-XXXX 1234 Talent Street, Cityville, Stateland, Country-12345
+      </div>
+    </section>
+
+    <script src="../script/createList.js"></script>
+
+  </body>
+</html>

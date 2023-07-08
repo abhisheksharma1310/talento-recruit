@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Recruit - Signup</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <header>TalentoRecruit</header>
+        <ul>
+            <li><a href='../index.html' role='button'>Home</a></li>
+            <li><a href='./recruit.html' role='button'>Recruit</a></li>
+            <li><a href='./login.html' role='button'>Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Header -->
+    <section class="welcome-header">
+        <header>Join TalentoRecruit Today</header>
+        <p>Create your TalentoRecruit account to access a world of talented candidates and revolutionize your hiring process.</p>
+    </section>
+
+    <!-- Form container -->
+    <section class="form-section">
+        <div class="form-container">
+            <form id="login-form">
+
+              <div class="form-group">
+                <label id="name-label" for="company-name">Company Name</label>
+                <input
+                  type="text"
+                  name="company-name"
+                  id="company-name"
+                  class="form-control"
+                  placeholder="Enter your company name"
+                  required
+                />
+              </div>
+
+                <div class="form-group">
+                  <label id="email-label" for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Enter your Email"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                    <label id="password-label" for="email">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      class="form-control"
+                      placeholder="Enter your password"
+                      required
+                      pattern="[a-z0-5]{8,}"
+                    />
+                </div>
+
+                <div class="form-group">
+                  <label id="confirm-password-label" for="email">Confirm Password</label>
+                  <input
+                    type="password"
+                    name="confirm-password"
+                    id="confirm-password"
+                    class="form-control"
+                    placeholder="Confirm password"
+                    required
+                    pattern="[a-z0-5]{8,}"
+                  />
+              </div>
+
+                <div class="form-group">
+                    <p>By signing up, you agree to our Terms of Service and Privacy Policy.</p>
+                </div>
+        
+                <div class="form-group">
+                  <button type="submit" id="signup" class="submit-button">
+                    Sign Up
+                  </button>
+                </div>
+
+                <div class="form-group">
+                    <p>Already have an account? <span><a href="./login.html">Login Here</a></span></p>
+                </div>
+              </form>
+        </div> 
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="social-icons">
+            <img src="../asset/image/facebook.svg" alt="facebook"/>
+            <img src="../asset/image/twitter.svg" alt="twitter"/>
+            <img src="../asset/image/instagram.svg" alt="instagram"/>
+            <img src="../asset/image/linkedIn.svg" alt="linkedIn"/>
+        </div>
+        <div class="copyright-info">Copyright © 2023 TalentoRecruit. All rights reserved.</div>
+        <div class="address">+1-XXX-XXX-XXXX 1234 Talent Street, Cityville, Stateland, Country-12345
+        </div>
+    </section>
+</body>
+</html>

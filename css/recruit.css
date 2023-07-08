@@ -1,0 +1,108 @@
+@import url("welcome-header.css");
+
+.search-button {
+  width: 80%;
+  height: 50px;
+  margin: 0 10% 2% 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-button button {
+  width: 40%;
+  border-radius: 10px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-form {
+  width: 80%;
+  height: 100px;
+  margin: 0 10% 2% 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-form {
+  width: 100%;
+  background: rgba(108, 99, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding: 20px;
+}
+
+#search-form input,
+select {
+  width: 500px;
+  height: 50px;
+}
+
+#search-form button {
+  width: 100px;
+  height: 50px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Candidate list */
+.candidate-list {
+  width: 80%;
+  height: 100%;
+  margin: 0 10% 2% 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: space-between;
+  background: rgba(108, 99, 255, 0.1);
+  padding: 20px;
+}
+
+.list-item .row1, .row2 {
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.list-item .row1 .candidate-name {
+  width: 600px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+}
+
+.list-item .row1 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.list-item .row1 select {
+  width: 100px;
+  height: 50px;
+}
+
+.list-item .row1 button {
+  width: 100px;
+  height: 50px;
+  background: #6c63ff;
+  border: none;
+}
