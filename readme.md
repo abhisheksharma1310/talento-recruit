@@ -19,7 +19,8 @@ TalentoRecruit is a digital recruitment solution app designed to provide a seaml
 - **User Login and Register Pages:** Secure login and registration pages tailored for companies to access and utilize the recruitment solution effectively.
 - **Candidate Search:** Search functionality to find candidates based on location and job roles. Candidates can be listed for later ranking and evaluation.
 
-For a more detailed description of the features, please refer to the [Homepage](#homepage), [User Login and Register Pages](#user-login-and-register-pages), and [Candidate Search](#candidate-search) sections.
+For a more detailed description of the features, please refer to the 
+<a href="https://jocular-marshmallow-e5bd94.netlify.app/" target="_blank">Talento recruit site</a>
 
 ## Installation
 
@@ -29,7 +30,7 @@ For a more detailed description of the features, please refer to the [Homepage](
    ```
 2. Navigate to the project directory:
    ```bash
-   cd TalentoRecruit
+   cd talento-recruit
    ```
 3. Open the index.html file in your preferred web browser.
 
