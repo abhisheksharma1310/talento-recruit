@@ -23,7 +23,7 @@ const data = [
     rank: "rank",
     skills: skill1,
     yoe: 1,
-    location: "India",
+    location: "india",
     role: role[0],
   },
   {
@@ -33,7 +33,7 @@ const data = [
     rank: "rank",
     skills: skill2,
     yoe: 1,
-    location: "India",
+    location: "india",
     role: role[0],
   },
   {
@@ -43,7 +43,7 @@ const data = [
     rank: "rank",
     skills: skill3,
     yoe: 2,
-    location: "India",
+    location: "india",
     role: role[2],
   },
   {
@@ -53,7 +53,7 @@ const data = [
     rank: "rank",
     skills: skill4,
     yoe: 5,
-    location: "India",
+    location: "india",
     role: role[2],
   },
   {
@@ -63,7 +63,7 @@ const data = [
     rank: "rank",
     skills: skill5,
     yoe: 1,
-    location: "India",
+    location: "india",
     role: role[1],
   },
   {
@@ -73,7 +73,7 @@ const data = [
     rank: "rank",
     skills: skill6,
     yoe: 0,
-    location: "India",
+    location: "india",
     role: role[3],
   },
   {
@@ -83,7 +83,7 @@ const data = [
     rank: "rank",
     skills: skill1,
     yoe: 2,
-    location: "India",
+    location: "india",
     role: role[0],
   },
   {
@@ -93,7 +93,7 @@ const data = [
     rank: "rank",
     skills: skill2,
     yoe: 3,
-    location: "India",
+    location: "india",
     role: role[0],
   },
   {
@@ -103,7 +103,7 @@ const data = [
     rank: "rank",
     skills: skill3,
     yoe: 1,
-    location: "India",
+    location: "india",
     role: role[2],
   },
   {
@@ -113,7 +113,7 @@ const data = [
     rank: "rank",
     skills: skill6,
     yoe: 0,
-    location: "India",
+    location: "india",
     role: role[3],
   },
 ];
@@ -321,10 +321,10 @@ function addPropToSavedData(data, value) {
 //filter list
 filterList.addEventListener("click", () => generateFilterList());
 function generateFilterList() {
-  const searchLocation = document.getElementById("search-location").value;
+  const searchLocation = document.getElementById("search-location").value.toLowerCase();
   const jobRole = document.getElementById("dropdown").value;
   if (searchValue == "searchList") {
-    const newFilterData = data.filter((el) => el?.role == jobRole);
+    const newFilterData = data.filter((el) => el?.role == jobRole && el.location == searchLocation);
     const targetContainer = document.getElementById("list-generate");
     targetContainer.innerHTML = "";
     if (newFilterData?.length > 0) {
