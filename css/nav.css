@@ -1,7 +1,9 @@
+
 body {
   width: 1440px;
   height: 100%;
   /* overflow: hidden; */
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
