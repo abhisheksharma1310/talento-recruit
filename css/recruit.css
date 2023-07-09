@@ -52,6 +52,10 @@ select {
 }
 
 /* Candidate list */
+#list-generate {
+  text-align: center;
+}
+
 .candidate-list {
   width: 80%;
   height: 100%;
@@ -105,4 +109,5 @@ select {
   height: 50px;
   background: #6c63ff;
   border: none;
+  cursor: pointer;
 }

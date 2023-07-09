@@ -324,7 +324,7 @@ function generateFilterList() {
   const searchLocation = document.getElementById("search-location").value.toLowerCase();
   const jobRole = document.getElementById("dropdown").value;
   if (searchValue == "searchList") {
-    const newFilterData = data.filter((el) => el?.role == jobRole && el.location == searchLocation);
+    const newFilterData = data.filter((el) => el?.role == jobRole || el.location == searchLocation);
     const targetContainer = document.getElementById("list-generate");
     targetContainer.innerHTML = "";
     if (newFilterData?.length > 0) {
