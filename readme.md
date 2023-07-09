@@ -1,4 +1,3 @@
-Sure! Here's an example of a README.md file for the static website you described:
 
 # TalentoRecruit - Digital Recruitment Solution
 
